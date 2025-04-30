@@ -853,6 +853,11 @@ detect-libc@^2.0.3:
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-2.0.4.tgz#f04715b8ba815e53b4d8109655b6508a6865a7e8"
   integrity sha512-3UDv+G9CsCKO1WKMGw9fwq/SWJYbI0c5Y7LU1AXYoDdbhE2AHQ6N6Nb34sG8Fj7T5APy8qXDCKuuIHd1BR0tVA==
 
+devicons-react@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/devicons-react/-/devicons-react-1.4.1.tgz#ed93eea41530a8954dc8cb2cb107f46df5dc7f05"
+  integrity sha512-mQl0EtroOZp29VAfLD4clsSszpKgj4XFAro4y+W5vdLsO7HY/Bwjs+h9xacebJ+wRGU1xbta31k5yGi0XTUrYg==
+
 electron-to-chromium@^1.5.73:
   version "1.5.144"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.5.144.tgz#9804fd6c342802e1d4b4fe57babbe8b64ca0b46c"

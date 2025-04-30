@@ -26,17 +26,14 @@ function Navbar() {
         {/* Make the name link scroll to the top/hero */}
         <a href="#" className="btn btn-ghost text-2xl text-primary">George Lin</a>
       </div>
-      <div className="navbar-center hidden lg:flex ml-6">
-        {/* Update desktop menu links */}
-        <ul className="menu menu-horizontal px-1 text-base">
+      <div className="navbar-end hidden lg:flex ml-6">
+      <ul className="menu menu-horizontal px-1 text-base">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li> {/* Added Skills */}
+          <li><a href="#skills">Skills</a></li> 
           <li><a href="#contact">Contact</a></li>
-          <li><a href="/blog">Blog</a></li> {/* Use href for now, will change to Link */}
+          <li><a href="/blog">Blog</a></li> 
         </ul>
-      </div>
-      <div className="navbar-end">
         <div className="flex items-center mr-4">
            <ThemeToggle />
         </div>

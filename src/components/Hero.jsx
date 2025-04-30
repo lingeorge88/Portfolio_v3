@@ -12,12 +12,19 @@ function Hero() {
           <p className="text-2xl py-6">
           A computer science student exploring the intersectionality of healthcare and A.I.
           </p>
+          <div className="avatar avatar-online">
+          <div className="w-56 rounded-full ring-primary-content ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
           <img
               alt="hero image"
               src={heroImg}
-              className="rounded-full w-56 h-auto mx-auto"
+              className="rounded-full h-auto mx-auto"
           />
+    </div>
+          </div>
+          <div>
+
           <a href="#projects" className="btn btn-primary mt-8">View My Work</a>
+          </div>
         </div>
       </div>
     </div>
