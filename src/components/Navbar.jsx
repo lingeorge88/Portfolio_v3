@@ -21,6 +21,7 @@ function Navbar() {
             <li><a href="#skills">Skills</a></li> {/* Added Skills */}
             <li><a href="#contact">Contact</a></li>
             <li><a href="/blog">Blog</a></li> {/* Use href for now, will change to Link */}
+            <li><ThemeToggle /></li>
           </ul>
         </div>
         {/* Make the name link scroll to the top/hero */}

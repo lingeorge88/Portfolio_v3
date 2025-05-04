@@ -16,8 +16,8 @@ function App() {
       <div id="app-content" className="app-content-container">
         <About />
       </div>
-        <Projects />
         <Skills />
+        <Projects />
       <Footer />
     </>
   )
