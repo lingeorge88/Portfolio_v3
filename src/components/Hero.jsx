@@ -1,5 +1,4 @@
 import React from 'react';
-import heroImg from '../assets/heroImg.png';
 
 function Hero() {
   return (
@@ -16,13 +15,12 @@ function Hero() {
           <div className="w-56 rounded-full ring-primary-content ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
           <img
               alt="hero image"
-              src={heroImg}
+              src="/heroImg.png"
               className="rounded-full h-auto mx-auto"
           />
     </div>
           </div>
           <div>
-
           <a href="#projects" className="btn btn-primary mt-8">View My Work</a>
           </div>
         </div>
