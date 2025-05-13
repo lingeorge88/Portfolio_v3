@@ -4,6 +4,7 @@ import SMAppImg from '../assets/SMApp.png';
 import GameStoreImg from '../assets/GameStore.png';
 import PixelFighterImg from '../assets/PixelFighter.png';
 import PokeAppImg from '../assets/PokeApp.png';
+import TradeSightImg from '../assets/AdminDash.png'
 
 // Example Technology Icons (placeholders - you might use actual icon components/SVGs)
 const TechIcon = ({ name }) => (
@@ -49,6 +50,15 @@ function Projects() {
       repoUrl: "https://github.com/lingeorge88/Poke_Trader",
       technologies: ["ReactJS", "MongoDB", "GraphQL", "MaterialUI", "ExpressJS"],
     },
+    {
+      id: 5,
+      title: "Trade Sight",
+      description: "A front-end focused modern admin dashboard that displays useful data to users",
+      imageUrl: TradeSightImg,
+      liveUrl: "https://trade-sight-app.onrender.com/",
+      repoUrl: "https://github.com/lingeorge88/Admin_dashboard",
+      technologies: ["ReactJS", "MongoDB", ,"mongoose", "MaterialUI", "NivoCharts"],
+    }
   ];
 
   return (
