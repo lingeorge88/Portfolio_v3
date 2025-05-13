@@ -1,10 +1,19 @@
 import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import avatarImg from '../assets/avatar.jpg';
 import ThemeToggle from "./ThemeToggle";
-// import { Link } from 'react-router-dom'; 
 
-// Define as a function
 function Navbar() {
+  const location = useLocation();
+  const isMainPage = location.pathname === '/';
+
+  const NavLink = ({ to, children }) => {
+    if (isMainPage) {
+      return <a href={to}>{children}</a>;
+    }
+    return <Link to={`/${to}`}>{children}</Link>;
+  };
+
   return (
     <div className="navbar bg-base-100 shadow-sm w-full">
       <div className="navbar-start">
@@ -16,27 +25,27 @@ function Navbar() {
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li> {/* Added Skills */}
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="/blog">Blog</a></li> {/* Use href for now, will change to Link */}
+            <li><NavLink to="#about">About</NavLink></li>
+            <li><NavLink to="#projects">Projects</NavLink></li>
+            <li><NavLink to="#skills">Skills</NavLink></li>
+            <li><NavLink to="#contact">Contact</NavLink></li>
+            <li><Link to="/blog">Blog</Link></li>
             <li><ThemeToggle /></li>
           </ul>
         </div>
         {/* Make the name link scroll to the top/hero */}
-        <a href="#" className="btn btn-ghost text-2xl text-primary">George Lin</a>
+        <Link to="/" className="btn btn-ghost text-2xl text-primary">George Lin</Link>
       </div>
       <div className="navbar-end hidden lg:flex ml-6">
-      <ul className="menu menu-horizontal px-1 text-base">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li> 
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="/blog">Blog</a></li> 
+        <ul className="menu menu-horizontal px-1 text-base">
+          <li><NavLink to="#about">About</NavLink></li>
+          <li><NavLink to="#projects">Projects</NavLink></li>
+          <li><NavLink to="#skills">Skills</NavLink></li>
+          <li><NavLink to="#contact">Contact</NavLink></li>
+          <li><Link to="/blog">Blog</Link></li>
         </ul>
         <div className="flex items-center mr-4">
-           <ThemeToggle />
+          <ThemeToggle />
         </div>
         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
           <div className="w-10 rounded-full">

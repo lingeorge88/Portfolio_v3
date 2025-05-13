@@ -14,7 +14,7 @@ function About() {
             My professional journey began in medical laboratories, where I developed analytical thinking and attention to detail skills. Recent advancements with various AI and LLM tools sparked my interest in computer science and have led me to explore its potential applications in healthcare. My unique background in medical laboratories gives me invaluable insights into the needs of both healthcare providers and patients when developing tools used by the healthcare industry, allowing me to approach programming challenges with a focus on end-users and the technical understanding needed to create AI solutions that meaningfully enhance clinical decision-making.
             </p>
             <p>
-            In my freetime, I enjoy watching basketball games and TV shows. My favorite team to watch is the Golden State Warriors and some of my favorite shows include Dragon Ball, Naruto and One Piece.
+            In my freetime, I enjoy watching basketball games and TV shows, as well as keeping up with the newest developments in the field of AI and ML! 
             </p>
          </div>
        </div>

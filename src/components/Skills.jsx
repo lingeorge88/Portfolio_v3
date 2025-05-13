@@ -9,13 +9,12 @@ import RPlain from 'devicons-react/lib/icons/RPlain';
 import TailwindcssOriginal from 'devicons-react/lib/icons/TailwindcssOriginal';
 import JavaPlain from 'devicons-react/lib/icons/JavaPlain';
 import PythonOriginal from 'devicons-react/lib/icons/PythonOriginal';
-import { PythonOriginalWordmark } from 'devicons-react';
-
-
+import NetlifyOriginal from 'devicons-react/lib/icons/NetlifyOriginal';
+import HerokuOriginal from 'devicons-react/lib/icons/HerokuOriginal';
 import CPlain from 'devicons-react/lib/icons/CPlain';
 import GitPlain from 'devicons-react/lib/icons/GitPlain';
 import GithubOriginal from 'devicons-react/lib/icons/GithubOriginal';
-import FigmaPlain from 'devicons-react/lib/icons/FigmaPlain';
+import MongodbOriginal from 'devicons-react/lib/icons/MongodbOriginal';
 
 
 // Categorize skills data
@@ -30,15 +29,17 @@ const languages = [
 ];
 
 const frameworksLibraries = [
-  { name: 'React', IconComponent: ReactOriginal },
+  { name: 'ReactJS', IconComponent: ReactOriginal },
   { name: 'Node.js', IconComponent: NodejsPlain },
   { name: 'TailwindCSS', IconComponent: TailwindcssOriginal },
+  { name: 'MongoDB', IconComponent: MongodbOriginal}
 ];
 
 const tools = [
   { name: 'Git', IconComponent: GitPlain },
   { name: 'GitHub', IconComponent: GithubOriginal },
-  { name: 'Figma', IconComponent: FigmaPlain },
+  { name: 'Netlify', IconComponent: NetlifyOriginal },
+  { name: 'Heroku', IconComponent: HerokuOriginal}
 ];
 
 function Skills() {

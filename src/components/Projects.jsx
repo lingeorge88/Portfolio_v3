@@ -1,10 +1,9 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-
-// Placeholder images and icons - replace later
-const placeholderImg1 = "https://via.placeholder.com/400x200/808080/ffffff?text=Project+1";
-const placeholderImg2 = "https://via.placeholder.com/400x200/707070/ffffff?text=Project+2";
-const placeholderImg3 = "https://via.placeholder.com/400x200/606060/ffffff?text=Project+3";
+import SMAppImg from '../assets/SMApp.png';
+import GameStoreImg from '../assets/GameStore.png';
+import PixelFighterImg from '../assets/PixelFighter.png';
+import PokeAppImg from '../assets/PokeApp.png';
 
 // Example Technology Icons (placeholders - you might use actual icon components/SVGs)
 const TechIcon = ({ name }) => (
@@ -16,35 +15,42 @@ function Projects() {
   const projectData = [
     {
       id: 1,
-      title: "Interactive Dashboard",
-      description: "A dynamic dashboard built with React and D3.js for visualizing data trends effectively.",
-      imageUrl: placeholderImg1,
-      liveUrl: "https://example.com/dashboard",
-      repoUrl: "https://github.com/your-repo/dashboard",
-      technologies: ["React", "D3.js", "Tailwind"],
+      title: "Social Village",
+      description: "A full-stack social media application that mimics Facebook with real time updates and user interactions.",
+      imageUrl: SMAppImg,
+      liveUrl: "https://gatherly88.onrender.com/",
+      repoUrl: "https://github.com/lingeorge88/MERN_Social_Media",
+      technologies: ["React", "Node.js", "MongoDB", "TailwindCSS", "Render.io"],
     },
     {
       id: 2,
-      title: "E-commerce Platform",
-      description: "Full-stack online store featuring product listings, cart management, and checkout. This description is a bit longer to test height differences.",
-      imageUrl: placeholderImg2,
-      liveUrl: "https://example.com/store",
-      repoUrl: "#", 
-      technologies: ["Node.js", "Express", "MongoDB", "React", "Another", "One"],
+      title: "Retro Rush",
+      description: "An e-commerce platform geared towards retro video game enthusiasts and collectors with user payment processing and custom CSS styling.",
+      imageUrl: GameStoreImg,
+      liveUrl: "https://retro-rush-38883.netlify.app/",
+      repoUrl: "https://github.com/lingeorge88/8bitGamesV2", 
+      technologies: ["React", "Node.js", "Netlify", "Stripe", "React Lazy"],
     },
     {
       id: 3,
-      title: "Portfolio Website V2",
-      description: "Previous version of my personal portfolio.",
-      imageUrl: placeholderImg3,
-      liveUrl: "#",
-      repoUrl: "https://github.com/your-repo/portfolio-v2",
-      technologies: ["HTML", "CSS", "JavaScript"],
+      title: "Pixel Fighter",
+      description: "A retro-style two-player shooting game built with Pygame.",
+      imageUrl: PixelFighterImg,
+      liveUrl: "https://www.youtube.com/watch?v=D9IKvuRBKG0",
+      repoUrl: "https://github.com/lingeorge88/Pixel_Fighter",
+      technologies: ["Python", "PyGame"],
     },
-    // Add more projects as needed
+    {
+      id: 4,
+      title: "Poké Trader",
+      description: "A Pokemon TCG application that lets users collect, browse and trade with other Pokémon card collectors and players",
+      imageUrl: PokeAppImg,
+      liveUrl: "https://poketraderv1.herokuapp.com/",
+      repoUrl: "https://github.com/lingeorge88/Poke_Trader",
+      technologies: ["ReactJS", "MongoDB", "GraphQL", "MaterialUI", "ExpressJS"],
+    },
   ];
 
-  // Restore the full return statement with the grid layout
   return (
     <div id="projects" className="py-16 px-4 bg-base-100"> 
       <div className="max-w-6xl mx-auto text-center"> 
@@ -53,7 +59,6 @@ function Projects() {
         {/* Tailwind Responsive Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center"> 
           {projectData.map((project) => (
-            // Render ProjectCard for each project
             <ProjectCard 
               key={project.id} 
               title={project.title}
