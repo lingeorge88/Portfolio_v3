@@ -6,7 +6,7 @@ function Footer(){
 <footer className="footer footer-horizontal footer-center bg-primary text-primary-content p-10">
   <aside className="text-center">
     <p className="font-bold">
-      Handcrafted by me
+      Handcrafted by George Lin
       <br />
       Powered by{' '}
       <a href="https://daisyui.com/" target="_blank" rel="noopener noreferrer" className="link link-hover">
